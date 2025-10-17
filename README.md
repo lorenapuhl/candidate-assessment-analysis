@@ -57,7 +57,14 @@ Using **Item Response Theory (IRT)** and **machine learning**, this simulation m
 
 ---
 
-## 📁 Repository Structure
+# WIP – current status of analysis
+
+## Simulations and Model Testing
+
+This repository explores the simulation and estimation of candidate performance data using different modeling approaches. The notebook **`simulate_candidates_2PL.ipynb`** generates synthetic response data based on the **2-Parameter Logistic (2PL) Item Response Theory (IRT)** model, simulating how candidate ability and item characteristics interact to produce outcomes. In parallel, **`simulate_candidates_heuristic.ipynb`** creates a comparable dataset using a **heuristic approach**, providing a non-IRT baseline for comparison. The **`fit_IRT_2PLmodel.ipynb`** notebook fits an IRT model to the data simulated under the 2PL assumptions, estimating item discrimination and difficulty parameters through maximum likelihood estimation. Similarly, **`fit_IRT_heuristic.ipynb`** applies IRT fitting techniques to the heuristic data to evaluate model robustness and sensitivity when the underlying data-generating process does not strictly follow IRT assumptions. Together, these experiments allow for testing, validation, and deeper understanding of model behavior across theoretical and heuristic conditions.
+
+
+## Repository Structure
 
 ```text
 ├──simulations_and models_testing/
@@ -67,8 +74,7 @@ Using **Item Response Theory (IRT)** and **machine learning**, this simulation m
 │  ├── fit_IRT_heuristic.ipynb               # Fit IRT model to heuristic data from simulate_candidates_heuristic.ipynb
 │
 │
-├── data/
-│   
+├── data/ 
 │  ├── 2pl_candidate_irt_estimates1
 │  ├── 2pl_item_irt_parameters1
 │  ├── 2pl_item_parameters1
