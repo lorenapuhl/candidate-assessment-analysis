@@ -60,35 +60,28 @@ Using **Item Response Theory (IRT)** and **machine learning**, this simulation m
 ## 📁 Repository Structure
 
 ```text
-simulations_and models_testing/
+├──simulations_and models_testing/
+│  ├── simulate_candidates_2PL.ipynb         # simulate data using 2PL model
+│  │── simulate_candidates_heuristic.ipynb   # simulate data using heursitic model
+│  ├── fit_IRT_2PLmodel.ipynb                # Fit IRT model to 2PL data from simulate_candidates_2PL.ipynb 
+│  ├── fit_IRT_heuristic.ipynb               # Fit IRT model to heuristic data from simulate_candidates_heuristic.ipynb
 │
-├── simulate_candidates_2PL.ipynb         # simulate data using 2PL model
-│── simulate_candidates_heuristic.ipynb   # simulate data using heursitic model
-├── fit_IRT_2PLmodel.ipynb                # Fit IRT model to 2PL data from simulate_candidates_2PL.ipynb 
-├── fit_IRT_heuristic.ipynb               # Fit IRT model to heuristic data from simulate_candidates_heuristic.ipynb
 │
 ├── data/
-│   ├── simulated_responses_day1.csv        # Initial candidate responses
-│   ├── simulated_responses_day10.csv       # Final iteration responses
-│   └── project_performance.csv         # Project outcome labels (low, medium, high)
+│   
+│  ├── 2pl_candidate_irt_estimates1
+│  ├── 2pl_item_irt_parameters1
+│  ├── 2pl_item_parameters1
+│  ├── 2pl_project_performance1
+│  ├── 2pl_simulated_responses1
+│  ├── assessment_results
+│  ├── candidate_irt_estimates
+│  ├── item_irt_parameters
+│  ├── passed_candidates_with_performance
+│  ├── project_performance
+│  ├── questions_metadata
+│  └── responses1
 │
-
-│
-├── scripts/
-│   ├── simulate_candidates.py              # Create candidate/item data
-│   ├── fit_IRT.py                          # Estimate IRT parameters
-│   ├── evaluate_correlation.py             # Compute correlations and significance
-│   └── update_assessment.py                # Adaptive refinement logic
-│
-├── results/
-│   ├── item_parameters_day1.csv
-│   ├── item_parameters_day10.csv
-│   ├── model_performance.json
-│   └── plots/
-│       ├── item_curves.png
-│       ├── theta_distributions.png
-│       ├── correlation_heatmap.png
-│       ├── performance_trend.png
 │
 ├── requirements.txt                        # Dependencies list
 └── README.md                               # Project documentation
