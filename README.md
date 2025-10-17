@@ -62,17 +62,17 @@ Using **Item Response Theory (IRT)** and **machine learning**, this simulation m
 ```text
 simulations_and models_testing/
 │
+├── simulate_candidates_2PL.ipynb         # simulate data using 2PL model
+│── simulate_candidates_heuristic.ipynb   # simulate data using heursitic model
+├── fit_IRT_2PLmodel.ipynb                # Fit IRT model to 2PL data from simulate_candidates_2PL.ipynb 
+├── fit_IRT_heuristic.ipynb               # Fit IRT model to heuristic data from simulate_candidates_heuristic.ipynb
+│
 ├── data/
 │   ├── simulated_responses_day1.csv        # Initial candidate responses
 │   ├── simulated_responses_day10.csv       # Final iteration responses
-│   └── project_performance.csv             # Project outcome labels (low, medium, high)
+│   └── project_performance.csv         # Project outcome labels (low, medium, high)
 │
-├── notebooks/
-│   ├── 01_data_simulation.ipynb            # Generate candidate and response data
-│   ├── 02_IRT_modeling.ipynb               # Fit IRT model, estimate difficulty/discrimination
-│   ├── 03_predictive_analysis.ipynb        # Correlation and ML prediction analysis
-│   ├── 04_adaptive_improvement.ipynb       # Adaptive item replacement and simulation
-│   └── 05_visualizations_dashboard.ipynb   # Visualization and reporting
+
 │
 ├── scripts/
 │   ├── simulate_candidates.py              # Create candidate/item data
