@@ -61,7 +61,7 @@ Simulates assessment data using a **heuristic probability model**:
 Fits a **2PL IRT model** to the simulated 2PL data to validate parameter recovery, estimating discrimination (a) and difficulty (b) and comparing estimates with true values.
 
 **Conclusion:**  
-While the 2PL model predicts total scores extremely well (r = 0.991, R² = 0.974), it performs poorly in recovering true parameters: discrimination (~32% error), difficulty (~90% error), and abilities (~155% error). This illustrates that internal consistency and predictive performance can mask fundamental inaccuracies in latent parameter estimation. Practically, the model works well for ranking and scoring but not for precise measurement of abilities or item properties.
+While the 2PL model predicts total scores extremely well, it performs poorly in recovering true parameters: discrimination, difficulty, and abilities. This illustrates that internal consistency and predictive performance can mask fundamental inaccuracies in latent parameter estimation. Practically, the model works well for ranking and scoring but not for precise measurement of abilities or item properties.
 
 ### `fit_IRT_heuristic.ipynb`
 Applies IRT fitting to **heuristic data**, comparing estimated latent abilities and item parameters with the heuristic “ground truth.”
