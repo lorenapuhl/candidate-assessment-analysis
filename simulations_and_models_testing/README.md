@@ -4,6 +4,44 @@ This folder contains Jupyter notebooks for simulating and analyzing candidate as
 
 ---
 
+## Repository Structure
+
+```
+├── notebooks/                          # Jupyter notebooks for analysis and simulation
+│   ├── fit_IRT_2PLmodel.ipynb         # Fitting 2PL IRT model
+│   ├── fit_IRT_2PLmodel_dynamic.ipynb # Dynamic 2PL IRT model fitting
+│   ├── fit_IRT_heuristic.ipynb        # Heuristic IRT model fitting
+│   ├── simulate_candidates_2PL.ipynb  # Simulating candidates using 2PL model
+│   └── simulate_candidates_heuristic.ipynb # Simulating candidates using heuristic approach
+├── data/                              # Data files
+│   ├── 2pl_candidate_irt_estimates1.csv
+│   ├── 2pl_item_irt_parameters1.csv
+│   ├── 2pl_item_parameters1.csv
+│   ├── 2pl_project_performance1.csv
+│   ├── 2pl_simulated_responses1.csv
+│   ├── assessment_results.csv
+│   ├── candidate_irt_estimates.csv
+│   ├── item_irt_parameters.csv
+│   ├── passed_candidates_with_performance.csv
+│   ├── project_performance.csv
+│   ├── questions_metadata.csv
+│   └── responses1.csv
+├── requirements.txt                   # Python dependencies
+└── README.md                         # Project documentation
+```
+
+### Key Directories:
+- **notebooks/**: Contains all Jupyter notebooks for IRT model fitting and candidate simulation
+- **data/**: Contains all CSV data files including IRT parameters, candidate estimates, and response data
+- **.ipynb_checkpoints/**: Auto-generated directory for Jupyter notebook checkpoints
+
+## Main Data Files:
+- IRT model outputs (`2pl_*` files)
+- Candidate ability estimates (`candidate_irt_estimates*.csv`)
+- Item parameters (`item_irt_parameters*.csv`)
+- Response data (`responses*.csv`, `2pl_simulated_responses*.csv`)
+- Performance metrics (`project_performance*.csv`)
+
 ## Notebooks Overview
 
 ### `simulate_candidates_2PL.ipynb`
